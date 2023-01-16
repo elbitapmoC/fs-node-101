@@ -1,9 +1,8 @@
-const tribes = 12;
+// Start with ./
+const names = require("./4-names");
+const howdy = require("./5-utils");
 
-if (tribes > 12) {
-  console.log("Yasharahla");
-} else {
-  console.log("Nada");
-}
-
-console.log(`1st node app.`);
+let keys = Object.keys(names);
+keys.forEach((key) => {
+  howdy(names[key]);
+});
