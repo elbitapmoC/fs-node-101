@@ -7,6 +7,8 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   console.log(req.url);
 
+  console.log(_.random(20));
+
   // Set header content type
   res.setHeader("Content-Type", "text/html");
   let path = "./views/";
